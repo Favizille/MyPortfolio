@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal Bootstrap Template</title>
+  <title>Favour Gabriel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,14 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -42,10 +34,11 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html">Emily Jones</a></h1>
+      <h1><a href="#">Favour Gabriel Akpan</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
+      <h2>I'm a passionate <span>PHP Laravel developer</span></h2>
+      <h5>Highly skilled and motivated in software development with 3+ years of experience.</h5>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -85,32 +78,33 @@
           <img src="assets/img/me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>UI/UX &amp; Graphic Designer</h3>
+          <h3>PHP &amp; Laravel Developer</h3>
           <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            I am a full stack developer but weigh heavily on the backend with laravel framework using the PHP programming language. I write articles about laravel and PHP on medium too (<a href="https://medium.com/@favourgabriel50">Medium articles</a>).
           </p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                {{-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> --}}
+                <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>Computer Science</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 8162926146</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Uyo, Nigeria</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Sc</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>favourgabriel50@gmail.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
           </div>
           <p>
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            I have a solid enthusiasm for web improvement and a strong foundation in Laravel, I am sure in my capacity to contribute to yourteam and help drive the success of your projects.
+          </p>
+          <p>
+            During my studies, I picked up hands-on encounter in building web applications utilizing Laravel framework. I have a solid understanding of MVC architecture, RESTful APIs, and database management. I am moreover proficient in HTML, CSS, and JavaScript, which permits me to form outwardly engaging and aesthetically pleasing user interfaces
+            What sets me separated is my capacity to rapidly learn modern advances in technology and adjust to changing situations. I am a solid issue solver and appreciate working collaboratively to discover innovative solutions
           </p>
         </div>
       </div>
@@ -118,7 +112,7 @@
     </div><!-- End About Me -->
 
     <!-- ======= Counts ======= -->
-    <div class="counts container">
+    {{-- <div class="counts container">
 
       <div class="row">
 
@@ -156,7 +150,7 @@
 
       </div>
 
-    </div><!-- End Counts -->
+    </div><!-- End Counts --> --}}
 
     <!-- ======= Skills  ======= -->
     <div class="skills container">
