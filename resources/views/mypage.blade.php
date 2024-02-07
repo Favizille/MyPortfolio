@@ -94,7 +94,7 @@
             <div class="col-lg-6">
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Sc</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>favourgabriel50@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>favourgabriel50@gmail.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
@@ -104,7 +104,7 @@
           </p>
           <p>
             During my studies, I picked up hands-on encounter in building web applications utilizing Laravel framework. I have a solid understanding of MVC architecture, RESTful APIs, and database management. I am moreover proficient in HTML, CSS, and JavaScript, which permits me to form outwardly engaging and aesthetically pleasing user interfaces
-            What sets me separated is my capacity to rapidly learn modern advances in technology and adjust to changing situations. I am a solid issue solver and appreciate working collaboratively to discover innovative solutions
+            What sets me separated is my capacity to rapidly learn modern advances in technology and adjust to changing situations. I am a solid issue solver and appreciate working collaboratively to discover innovative solutions.
           </p>
         </div>
       </div>
@@ -184,6 +184,20 @@
             </div>
           </div>
 
+          <div class="progress">
+            <span class="skill">Nest JS <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">React <i class="val">55%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
         </div>
 
         <div class="col-lg-6">
@@ -196,16 +210,31 @@
           </div>
 
           <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+            <span class="skill">Laravel <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MySql<i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">WordPress/CMS <i class="val">65%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
+
           <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <span class="skill">Typescript <i class="val">65%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -216,7 +245,7 @@
     </div><!-- End Skills -->
 
     <!-- ======= Interests ======= -->
-    <div class="interests container">
+    {{-- <div class="interests container">
 
       <div class="section-title">
         <h2>Interests</h2>
@@ -297,10 +326,11 @@
         </div>
       </div>
 
-    </div><!-- End Interests -->
+    </div> --}}
+    <!-- End Interests -->
 
     <!-- ======= Testimonials ======= -->
-    <div class="testimonials container">
+    {{-- <div class="testimonials container">
 
       <div class="section-title">
         <h2>Testimonials</h2>
@@ -382,9 +412,11 @@
 
       </div>
 
-    </div><!-- End Testimonials  -->
+    </div> --}}
+    <!-- End Testimonials  -->
 
-  </section><!-- End About Section -->
+  </section>
+  <!-- End About Section -->
 
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
@@ -397,58 +429,98 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
+          <h3 class="resume-title">Objective</h3>
           <div class="resume-item pb-0">
-            <h4>Alice Barkley</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <h4>Favour Gabriel Akpan</h4>
+            <p><em>High initiative and passionate backend developer with 3+ year
+              of experience in data manipulation in database. Determined
+              and hardworking Web developer who is open to learning and
+              has adaptable skills. I am seeking to get an opportunity where I
+              can make the best of my potential and contribute to the
+              organization's growth.</em></p>
             <p>
             <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>alice.barkley@example.com</li>
+              <li>Uyo, Akwa Ibom, Nigeria</li>
+              <li>+234 816 292 6146</li>
+              <li>favourgabriel50@gmail.com</li>
             </ul>
             </p>
           </div>
 
           <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
+          {{-- <div class="resume-item">
             <h4>Master of Fine Arts &amp; Graphic Design</h4>
             <h5>2015 - 2016</h5>
             <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
             <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div>
+          </div> --}}
           <div class="resume-item">
-            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-            <h5>2010 - 2014</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            <h4>Bachelor of Computer Science</h4>
+            <h5>2018 - 2022</h5>
+            <p><em>University of Uyo, Akwa Ibom, Nigeria</em></p>
           </div>
+
+          <h3 class="resume-title"> Soft Skills</h3>
+          <p>The following are soft skills that I posses;</p>
+          <ul>
+            <li>Ability to learn and adapt quickly.</li>
+            <li>Communication Skills.</li>
+            <li>Ability to work with distributed teams and environments.</li>
+            <li>Team collaboration</li>
+            <li>Problem Solving ability</li>
+          </ul>
         </div>
         <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
+          <h3 class="resume-title">Work Experience</h3>
           <div class="resume-item">
-            <h4>Senior graphic design specialist</h4>
-            <h5>2019 - Present</h5>
-            <p><em>Experion, New York, NY </em></p>
+            <h4>Frontend developer</h4>
+            <h5>August 2020 - October 2020</h5>
+            <p><em>Remote</em></p>
             <p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              <li> Worked with a team to create a web application (to recreate the slack application)</li>
+              <li>Deployment of frontend applications</li>
+              <li>Lead a documentation team on a project which I contributed with valuable ideas that helped with the advancement of the project.</li>
             </ul>
             </p>
           </div>
           <div class="resume-item">
-            <h4>Graphic design specialist</h4>
-            <h5>2017 - 2018</h5>
-            <p><em>Stepping Stone Advertising, New York, NY</em></p>
+            <h4>START INNOVATION HUB</h4>
+            <h5>November 2021 - April 2022</h5>
+            <p><em>Uyo, Akwa Ibom State, Nigeria</em></p>
             <p>
             <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              <li> Built web applications using advanced knowledge on laravel framework.</li>
+              <li>  Built APIs for consumption by frontend developers.</li>
+              <li> Built a Full-Stack School Management System application.</li>
+              <li> Was part of a team that built a Hospital Management System.</li>
+              <li>  Trained some people in web development.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4> FREELANCING</h4>
+            <h5>2020 - Present</h5>
+            <p><em>Remote</em></p>
+            <p>
+            <ul>
+              <li> Built a Library Management System</li>
+              <li> Created an ecommerce site</li>
+              <li> Built a Blog site</li>
+              <li> Developed APIs for consumption of a blog site which the frontend was done by the frontend team.</li>
+              <li> Built a payment gateway application.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>MITA SCHOOL</h4>
+            <h5>2023 - Present</h5>
+            <p><em>Uyo, Akwa Ibom State, Nigeria</em></p>
+            <p>
+            <ul>
+              <li>  Trained students in softaware development using PHP/ Laravel.</li>
+              <li>  Building websites using wordpress</li>
+              <li>  Building Fullstack applications using Laravel the php framework</li>
             </ul>
             </p>
           </div>
