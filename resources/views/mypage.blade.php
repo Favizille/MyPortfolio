@@ -53,10 +53,10 @@
       </nav><!-- .navbar -->
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/favizille" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://web.facebook.com/profile.php?id=100004166508191" class="facebook"><i class="bi bi-facebook"></i></a>
+        {{-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> --}}
+        <a href="https://www.linkedin.com/in/favour-akpan-0b3264224/?originalSubdomain=ng" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -75,7 +75,7 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+          <img src="assets/img/mine.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>PHP &amp; Laravel Developer</h3>
@@ -542,29 +542,29 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Full-stack Development</a></h4>
+            <p>Creation of a full website including both the frontend and the backend. With aesthetically pleasing user interfaces and effective functionalities.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4  mt-lg-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Backend Development</a></h4>
+            <p>Creation of effective APIs for consumption. Can work with both frontend developers and mobile developers for software development.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Wordpress</a></h4>
+            <p>Effiecent and effective use of content management system to produce simple beautiful websites.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+        {{-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon"><i class="bx bx-world"></i></div>
             <h4><a href="">Nemo Enim</a></h4>
@@ -586,7 +586,7 @@
             <h4><a href="">Divera don</a></h4>
             <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
           </div>
-        </div>
+        </div> --}}
 
       </div>
 
@@ -761,7 +761,7 @@
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+            <p>Vison road, Uyo, Nigeria</p>
           </div>
         </div>
 
@@ -770,11 +770,11 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/favizille" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://web.facebook.com/profile.php?id=100004166508191" class="facebook"><i class="bi bi-facebook"></i></a>
+              {{-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> --}}
+              {{-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> --}}
+              <a href="https://www.linkedin.com/in/favour-akpan-0b3264224/?originalSubdomain=ng" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -783,14 +783,14 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email Me</h3>
-            <p>contact@example.com</p>
+            <p>favourgabriel50@gmail.com</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Call Me</h3>
-            <p>+1 5589 55488 55</p>
+            <p>+234 8162 926 146</p>
           </div>
         </div>
       </div>
