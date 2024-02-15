@@ -485,8 +485,9 @@
             </p>
           </div>
           <div class="resume-item">
-            <h4>START INNOVATION HUB</h4>
+            <h4>Backend Developer</h4>
             <h5>November 2021 - April 2022</h5>
+            <p><em>START INNOVATION HUB</em></p>
             <p><em>Uyo, Akwa Ibom State, Nigeria</em></p>
             <p>
             <ul>
@@ -513,8 +514,9 @@
             </p>
           </div>
           <div class="resume-item">
-            <h4>MITA SCHOOL</h4>
+            <h4>Backend Developer</h4>
             <h5>2023 - Present</h5>
+            <p><em>MITA SCHOOL</em></p>
             <p><em>Uyo, Akwa Ibom State, Nigeria</em></p>
             <p>
             <ul>
@@ -606,7 +608,7 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-site">Site</li>
             <li data-filter=".filter-card">Card</li>
             <li data-filter=".filter-web">Web</li>
           </ul>
@@ -615,49 +617,51 @@
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-site">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/blog.jpg" class="img-fluid" alt="" style="height: 20em; width:25em;">
             <div class="portfolio-info">
-              <h4>App 1</h4>
+              <h4>Blog Site</h4>
+              <div class="portfolio-links">
+                {{-- https://github.com/Favizille/BlogSite --}}
+                <a href="assets/img/portfolio/blog.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-site">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/lms.jpeg" class="img-fluid" alt="" style="height: 20em; width:25em;">
+            <div class="portfolio-info">
+              <h4>LMS</h4>
+              <p>Library Management System</p>
+              <div class="portfolio-links">
+                {{-- https://github.com/Favizille/LibraryManagementSystem --}}
+                <a href="assets/img/portfolio/lms.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LMS"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-site">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/ecommerce.jpeg" class="img-fluid" alt="" style="height: 20em; width:25em;">
+            <div class="portfolio-info">
+              <h4>E-commerce</h4>
               <p>App</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                {{-- https://github.com/Favizille/E-commerce --}}
+                <a href="assets/img/portfolio/ecommerce.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="e-commerce"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -739,7 +743,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
 
       </div>
 

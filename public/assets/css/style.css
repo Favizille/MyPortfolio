@@ -20,13 +20,15 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/mybg.jpg") top right no-repeat;
+  /* url("../img/mybg.jpeg") */
+  background: #040404  top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+  /* opacity: 0.5; */
 }
 
 @media (min-width: 1024px) {
@@ -145,6 +147,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: #040404 1px solid;
   }
 }
 
