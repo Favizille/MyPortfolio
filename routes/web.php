@@ -19,3 +19,4 @@ use App\Http\Controllers\PortfolioController;
 // });
 
 Route::get('/', [PortfolioController::class, 'portfolio'])->name('portfolio');
+Route::get('/portfolio', [PortfolioController::class, 'getPortfolioDetails'])->name('portfolio.details');
