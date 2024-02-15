@@ -9,4 +9,8 @@ class PortfolioController extends Controller
     public function portfolio(){
         return view("mypage");
     }
+
+    public function getPortfolioDetails(){
+        return view("portfoli-details");
+    }
 }
