@@ -13,4 +13,8 @@ class PortfolioController extends Controller
     public function getPortfolioDetails(){
         return view("portfoli-details");
     }
+
+    public function updateDetails(){
+        return view('updatedetails');
+    }
 }
