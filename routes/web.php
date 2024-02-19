@@ -19,8 +19,14 @@ use App\Http\Controllers\PortfolioController;
 //     return view('welcome');
 // });
 
-Route::get('/login', [PortfolioController::class, 'login'])->name('login');
+// User Routes
 Route::get('/', [PortfolioController::class, 'portfolio'])->name('portfolio');
 Route::get('/portfolio', [PortfolioController::class, 'getPortfolioDetails'])->name('portfolio.details');
 Route::get('/portfolio/update', [PortfolioController::class, 'updateDetails'])->name('update.details');
 Route::get('/projects', [ProjectController::class, 'getProjects'])->name('projects.all');
+
+// Admin Routes
+Route::get('/login', [PortfolioController::class, 'login'])->name('login');
+Route::get('/admindashboard', [ProjectController::class, 'adminDashboard'])->name('dashbaord.admin');
+Route::put('/project/update/{projectID}', [ProjectController::class, 'updateProject'])->name('project.update');
+Route::delete('/project/delete/{projectID}', [ProjectController::class, 'deleteProject'])->name('project.delete');
