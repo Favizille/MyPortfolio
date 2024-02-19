@@ -516,7 +516,7 @@
           <div class="resume-item">
             <h4>Backend Developer</h4>
             <h5>2023 - Present</h5>
-            <p><em>MITA SCHOOL</em></p>
+            <p><em>TechMita Limited (Mita School)</em></p>
             <p><em>Uyo, Akwa Ibom State, Nigeria</em></p>
             <p>
             <ul>

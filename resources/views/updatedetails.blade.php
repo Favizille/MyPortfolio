@@ -29,7 +29,7 @@
 				<img src="{{ asset("UPassets/images/pf.jpg")}}" alt="IMG">
 			</div>
 
-			<form class="contact1-form validate-form">
+			<form  class="contact1-form validate-form">
 				<span class="contact1-form-title">
 					Update Porfolio
 				</span>
