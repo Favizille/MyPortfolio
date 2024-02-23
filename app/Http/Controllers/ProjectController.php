@@ -10,10 +10,25 @@ class ProjectController extends Controller
 {
     protected $projectRepository;
 
-    public function __construct(ProjectRepository $projectRepository){}
+    public function __construct(ProjectRepository $projectRepository){
+        $this->projectRepository = $projectRepository;
+    }
 
     public function adminDashboard(){
         return view("AdminDashboard");
+    }
+
+    public function addProject(){
+        return view("addproject");
+    }
+
+    public function createProject(ProjectRequest $request){
+        // dd($request);
+        if(!$this->projectRepository->addProject($request->validated())){
+            return redirect()->back()->withErrors("Failed to Add Project");
+        }
+
+        return redirect()->back()->with('message', "Project Added Successfully");
     }
 
     public function updateProject($projectId, ProjectRequest $request){
@@ -25,7 +40,7 @@ class ProjectController extends Controller
     }
 
     public function deleteProject($projectID){
-        if(!$this->projectRepository->delete($projectID)){
+        if(!$this->projectRepository->deleteProject($projectID)){
             return redirect()->route("dashbaord.admin")->withErrors("Couldn't Deleet Project");
         }
 
