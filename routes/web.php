@@ -27,6 +27,16 @@ Route::get('/projects', [ProjectController::class, 'getProjects'])->name('projec
 
 // Admin Routes
 Route::get('/login', [PortfolioController::class, 'login'])->name('login');
+Route::get('/project', [ProjectController::class, 'addProject'])->name('project.add');
+Route::post('/project/create', [ProjectController::class, 'createProject'])->name('project.create');
 Route::get('/admindashboard', [ProjectController::class, 'adminDashboard'])->name('dashbaord.admin');
 Route::put('/project/update/{projectID}', [ProjectController::class, 'updateProject'])->name('project.update');
 Route::delete('/project/delete/{projectID}', [ProjectController::class, 'deleteProject'])->name('project.delete');
+
+
+// To do list
+// 1. UPDATE PROJECT
+// 2. Delete project
+// 3. Service CRUD
+// 4. Notification CRUD
+// 5. Display projects on the admin dashboard blade

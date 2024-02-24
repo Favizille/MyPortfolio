@@ -65,10 +65,10 @@
                         <span>Lock Account</span>
                         <i class="mdi mdi-lock ml-1"></i>
                       </a>
-                      <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="{{route('logout')}}">
+                      {{-- <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="{{route('logout')}}">
                         <span>Log Out</span>
                         <i class="mdi mdi-logout ml-1"></i>
-                      </a>
+                      </a> --}}
                     </div>
                   </div>
                 </li>
@@ -171,10 +171,10 @@
             <ul class="nav">
               <li class="nav-item nav-category">Main</li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route("admin.dashboard")}}">
+                {{-- <a class="nav-link" href="{{ route("admin.dashboard")}}">
                   <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                   <span class="menu-title">Dashboard</span>
-                </a>
+                </a> --}}
               </li>
               <li class="nav-item ">
                 <a class="nav-link" data-toggle="collapse" href="{{ route("users.all")}}" >
