@@ -42,6 +42,6 @@ class ProjectController extends Controller
             return redirect()->route("dashbaord.admin")->withErrors("Couldn't Deleet Project");
         }
 
-        return redirect()->route("dashbaord.admin")->with("message", 'Deleted Succesfully');
+        return redirect()->route("dashbaord.admin")->with("message", 'Project Deleted Succesfully');
     }
 }
