@@ -206,44 +206,66 @@
           </nav>
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title"> Projects</h3>
+            <div class="page-header row ">
+              <h3 class="page-title col-5"> Projects</h3>
 
+              <form action="{{route('project.add')}}" method="GET">
+                @csrf
+                <button class="btn btn-secondary shadow">Add</button>
+              </form>
             </div>
             <div class="row">
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                       <div class="card-body">
+                        @if(session()->has('message'))
+                            <div class="alert alert-success text-center">
+                                {{ session()->get('message') }}
+                            </div>
+                        @endif
+
+                        @if(count($errors) > 0)
+                            @foreach( $errors->all() as $message )
+                                <div class="alert alert-danger display-hide">
+                                <span>{{ $message }}</span>
+                                </div>
+                            @endforeach
+                        @endif
                         <table class="table table-striped">
                           <thead>
                             <tr>
                                 <th> ID </th>
                                 <th> Name </th>
+                                <th> Client </th>
                                 <th> Category </th>
-                                <th> Project URL </th>
+                                {{-- <th> Project URL </th> --}}
                                 <th> Github </th>
-                              <th> Description </th>
                               <th> Date </th>
                             </tr>
                           </thead>
                           <tbody>
-                            <td>sdfghjk</td>
-                            <td>kjhgfc</td>
-                            <td>dgudhask</td>
-                            <td>duwhuw</td>
-                            <td>w7dyd</td>
-                            <td>e8y8</td>
-                            <td>8/9/91010</td>
-                            <td class="row">
-                                <form action="{{route("update.details")}}" method="GET" class="col-3">
-                                    <button type="submit" class="btn btn-success">edit</button>
-                                </form>
-                                <div class="col-1"></div>
-                                <form action="" method="POST" class="col-3">
-                                    @method('delete')
-                                    <button type="submit" class="btn btn-danger">delete</button>
-                                </form>
-                            </td>
+                            @foreach ($projects as $project)
+                              <tr>
+                                <td>{{$project->id}}</td>
+                                <td>{{$project->name}}</td>
+                                <td>{{$project->client}}</td>
+                                <td>{{$project->category}}</td>
+                                {{-- <td>{{$project->url}}</td> --}}
+                                <td>{{$project->github}}</td>
+                                <td>{{$project->date}}</td>
+                                <td class="row">
+                                    <form action="{{route("update.details", $project->id )}}" method="GET" class="col-3">
+                                        @csrf
+                                        <button type="submit" class="btn btn-success">edit</button>
+                                    </form>
+                                    <div class="col-1"></div>
+                                    <form action="" method="POST" class="col-3">
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger">delete</button>
+                                    </form>
+                                </td>
+                              </tr>
+                            @endforeach
 
                           </tbody>
                         </table>

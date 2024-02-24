@@ -22,7 +22,7 @@ use App\Http\Controllers\PortfolioController;
 // User Routes
 Route::get('/', [PortfolioController::class, 'portfolio'])->name('portfolio');
 Route::get('/portfolio', [PortfolioController::class, 'getPortfolioDetails'])->name('portfolio.details');
-Route::get('/portfolio/update', [PortfolioController::class, 'updateDetails'])->name('update.details');
+Route::get('/portfolio/update/{projectID}', [PortfolioController::class, 'updateDetails'])->name('update.details');
 Route::get('/projects', [ProjectController::class, 'getProjects'])->name('projects.all');
 
 // Admin Routes

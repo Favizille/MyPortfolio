@@ -29,50 +29,60 @@
 				<img src="{{ asset("UPassets/images/pf.jpg")}}" alt="IMG">
 			</div>
 
-			<form  class="contact1-form validate-form">
+			<form action={{ route('project.update', $project->id)}}  class="contact1-form validate-form" method="POST">
+                @csrf
+                @method("PUT")
 				<span class="contact1-form-title">
 					Update Porfolio
 				</span>
 
 				<div class="wrap-input1 validate-input" data-validate = "Name is required">
-					<input class="input1" type="text" name="name" placeholder="Name Of Project">
-					<span class="shadow-input1"></span>
-				</div>
-
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="category" placeholder="Category">
+					<input class="input1" type="text" name="name" placeholder="Name Of Project" value="{{old('name', $project->name)}}">
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="text" name="client" placeholder="Client">
+					<input class="input1" type="text" name="client" placeholder="Client" value={{ old('client', $project->client)}}>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="date" name="date" placeholder="Project Date">
+					<input class="input1" type="date" name="date" placeholder="Project Date" value={{ old('date', $project->date)}}>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="text" name="github" placeholder="Github URL">
+					<input class="input1" type="text" name="github" placeholder="Github URL" value={{ old('github', $project->github)}}>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="text" name="url" placeholder="URL">
+					<input class="input1" type="text" name="url" placeholder="URL" value="{{old('url', $project->url)}}">
+					<span class="shadow-input1"></span>
+				</div>
+
+                <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <select class="form-select input1 p-3 rounded" aria-label="Default select example">
+                        <option selected hidden value="{{old('category', $project->category)}}">{{$project->category}}</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="react">React</option>
+                        <option value="php">PHP</option>
+                        <option value="laravel">Laravel</option>
+                        <option value="wordpress">Wordpress</option>
+                        <option value="api">API</option>
+                    </select>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-					<textarea class="input1" name="description" placeholder="Description of the project"></textarea>
+					<textarea class="input1" name="description" placeholder="Description of the project" value={{ old('description', $project->description)}}>{{$project->description}}</textarea>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="container-contact1-form-btn">
 					<button class="contact1-form-btn">
 						<span>
-							Send Email
+							Update
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 						</span>
 					</button>
