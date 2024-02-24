@@ -20,6 +20,13 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset("UPassets/css/util.css")}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset("UPassets/css/main.css")}}">
 <!--===============================================================================================-->
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -53,11 +60,6 @@
 					<span class="shadow-input1"></span>
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="category" placeholder="Category">
-					<span class="shadow-input1"></span>
-				</div>
-
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
 					<input class="input1" type="text" name="client" placeholder="Client">
 					<span class="shadow-input1"></span>
@@ -77,6 +79,35 @@
 					<input class="input1" type="text" name="url" placeholder="URL">
 					<span class="shadow-input1"></span>
 				</div>
+
+                {{-- <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle wrap-input1 validate-input" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Category
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Javascript</a>
+                      <a class="dropdown-item" href="#">React</a>
+                      <a class="dropdown-item" href="#">PHP</a>
+                      <a class="dropdown-item" href="#">Laravel</a>
+                      <a class="dropdown-item" href="#">Wordpress</a>
+                      <a class="dropdown-item" href="#">API</a>
+                    </div>
+                  </div>
+                </div> --}}
+
+                <div class="wrap-input1 validate-input">
+                    <select class="form-select input1 p-3 rounded" aria-label="Default select example">
+                        <option selected hidden>Category</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="react">React</option>
+                        <option value="php">PHP</option>
+                        <option value="laravel">Laravel</option>
+                        <option value="wordpress">Wordpress</option>
+                        <option value="api">API</option>
+                    </select>
+                    <span class="shadow-input1"></span>
+                </div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
 					<textarea class="input1" name="description" placeholder="Description of the project"></textarea>

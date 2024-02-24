@@ -11,8 +11,15 @@ class ProjectRepository
     }
 
     public function addProject(array $data): Project{
-        // dd($data);
         return $this->project->create($data);
+    }
+
+    public function getProject(int $id): Project{
+        return $this->project->where('id', $id)->first();
+    }
+
+    public function getAllProjects(){
+        return $this->project->all();
     }
 
     public function updateProject(int $id, array $data): Project{

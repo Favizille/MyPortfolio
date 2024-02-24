@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Requests\ProjectRequest;
 use App\Repository\Eloquent\ProjectRepository;
 
@@ -14,8 +13,8 @@ class ProjectController extends Controller
         $this->projectRepository = $projectRepository;
     }
 
-    public function adminDashboard(){
-        return view("AdminDashboard");
+    public function adminDashboard( ){
+        return view("AdminDashboard",  ['projects' => $this->projectRepository->getAllProjects()] );
     }
 
     public function addProject(){
@@ -23,12 +22,11 @@ class ProjectController extends Controller
     }
 
     public function createProject(ProjectRequest $request){
-        // dd($request);
-        if(!$this->projectRepository->addProject($request->validated())){
+        if(!$project = $this->projectRepository->addProject($request->validated())){
             return redirect()->back()->withErrors("Failed to Add Project");
         }
 
-        return redirect()->back()->with('message', "Project Added Successfully");
+        return redirect()->route('dashbaord.admin', $project->id)->with('message', "Project Added Successfully");
     }
 
     public function updateProject($projectId, ProjectRequest $request){

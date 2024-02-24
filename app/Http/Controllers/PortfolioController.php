@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Project;
+
+
 
 class PortfolioController extends Controller
 {
+    protected $project;
+
+    public function __construct(Project $project){
+        $this->project = $project;
+    }
+
     public function portfolio(){
         return view("mypage");
     }
@@ -14,7 +22,7 @@ class PortfolioController extends Controller
         return view("portfoli-details");
     }
 
-    public function updateDetails(){
-        return view('updatedetails');
+    public function updateDetails($projectID){
+        return view('updatedetails', ['project' => $this->project->find($projectID)]);
     }
 }
