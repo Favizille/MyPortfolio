@@ -31,10 +31,10 @@ class ProjectController extends Controller
 
     public function updateProject($projectId, ProjectRequest $request){
         if(!$this->projectRepository->updateProject($projectId, $request->validated())){
-            return redirect()->back()->withError("Update failed");
+            return redirect()->route('update.details')->withError("Update failed");
         }
 
-        return redirect()->route('dashbaord.admin')->with('message', "Update was done succesfully");
+        return redirect()->route('dashbaord.admin')->with('message', " Project was edited succesfully");
     }
 
     public function deleteProject($projectID){

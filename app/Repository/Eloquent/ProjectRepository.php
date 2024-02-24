@@ -22,7 +22,7 @@ class ProjectRepository
         return $this->project->all();
     }
 
-    public function updateProject(int $id, array $data): Project{
+    public function updateProject(int $id, array $data): int{
 
        return $this->project->where("id", $id)->update($data);
     }
