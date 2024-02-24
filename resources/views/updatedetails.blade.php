@@ -36,6 +36,20 @@
 					Update Porfolio
 				</span>
 
+                @if(session()->has('message'))
+                <div class="alert alert-success text-center">
+                    {{ session()->get('message') }}
+                </div>
+                @endif
+
+                @if(count($errors) > 0)
+                    @foreach( $errors->all() as $message )
+                        <div class="alert alert-danger display-hide">
+                        <span>{{ $message }}</span>
+                        </div>
+                    @endforeach
+                @endif
+
 				<div class="wrap-input1 validate-input" data-validate = "Name is required">
 					<input class="input1" type="text" name="name" placeholder="Name Of Project" value="{{old('name', $project->name)}}">
 					<span class="shadow-input1"></span>
@@ -62,7 +76,7 @@
 				</div>
 
                 <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                    <select class="form-select input1 p-3 rounded" aria-label="Default select example">
+                    <select class="form-select input1 p-3 rounded" aria-label="Default select example" name="category">
                         <option selected hidden value="{{old('category', $project->category)}}">{{$project->category}}</option>
                         <option value="javascript">Javascript</option>
                         <option value="react">React</option>

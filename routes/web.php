@@ -34,9 +34,3 @@ Route::put('/project/update/{projectID}', [ProjectController::class, 'updateProj
 Route::delete('/project/delete/{projectID}', [ProjectController::class, 'deleteProject'])->name('project.delete');
 
 
-// To do list
-// 1. UPDATE PROJECT
-// 2. Delete project
-// 3. Service CRUD
-// 4. Notification CRUD
-// 5. Display projects on the admin dashboard blade

@@ -41,19 +41,6 @@
 				<span class="contact1-form-title">
 					Add Project
 				</span>
-                @if(session()->has('message'))
-                            <div class="alert alert-success text-center">
-                                {{ session()->get('message') }}
-                            </div>
-            @endif
-
-            @if(count($errors) > 0)
-                @foreach( $errors->all() as $message )
-                    <div class="alert alert-danger display-hide">
-                    <span>{{ $message }}</span>
-                    </div>
-                @endforeach
-            @endif
 
 				<div class="wrap-input1 validate-input" data-validate = "Name is required">
 					<input class="input1" type="text" name="name" placeholder="Name Of Project">
@@ -79,22 +66,6 @@
 					<input class="input1" type="text" name="url" placeholder="URL">
 					<span class="shadow-input1"></span>
 				</div>
-
-                {{-- <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle wrap-input1 validate-input" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Category
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Javascript</a>
-                      <a class="dropdown-item" href="#">React</a>
-                      <a class="dropdown-item" href="#">PHP</a>
-                      <a class="dropdown-item" href="#">Laravel</a>
-                      <a class="dropdown-item" href="#">Wordpress</a>
-                      <a class="dropdown-item" href="#">API</a>
-                    </div>
-                  </div>
-                </div> --}}
 
                 <div class="wrap-input1 validate-input">
                     <select class="form-select input1 p-3 rounded" aria-label="Default select example">

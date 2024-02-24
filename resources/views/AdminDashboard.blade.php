@@ -234,7 +234,7 @@
                         <table class="table table-striped">
                           <thead>
                             <tr>
-                                <th> ID </th>
+                                {{-- <th> ID </th> --}}
                                 <th> Name </th>
                                 <th> Client </th>
                                 <th> Category </th>
@@ -246,7 +246,7 @@
                           <tbody>
                             @foreach ($projects as $project)
                               <tr>
-                                <td>{{$project->id}}</td>
+                                {{-- <td>{{$project->id}}</td> --}}
                                 <td>{{$project->name}}</td>
                                 <td>{{$project->client}}</td>
                                 <td>{{$project->category}}</td>
@@ -259,8 +259,9 @@
                                         <button type="submit" class="btn btn-success">edit</button>
                                     </form>
                                     <div class="col-1"></div>
-                                    <form action="" method="POST" class="col-3">
+                                    <form action="{{ route('project.delete', $project->id)}}" method="POST" class="col-3">
                                         @method('delete')
+                                        @csrf
                                         <button type="submit" class="btn btn-danger">delete</button>
                                     </form>
                                 </td>
@@ -277,8 +278,8 @@
           <footer class="footer">
             <div class="footer-inner-wraper">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Developed by Favour Gabriel</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> </span>
               </div>
             </div>
           </footer>
