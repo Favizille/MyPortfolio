@@ -18,8 +18,8 @@ class PortfolioController extends Controller
         return view("mypage");
     }
 
-    public function getPortfolioDetails(){
-        return view("portfoli-details");
+    public function getPortfolioDetails($id){
+        return view("portfoli-details", ["project" => $this->project->find($id)]);
     }
 
     public function updateDetails($projectID){

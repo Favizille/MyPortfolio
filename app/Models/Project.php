@@ -16,6 +16,10 @@ class Project extends Model
         "date",
         "github",
         "url",
-        "description"
+        "description",
+        "image1",
+        "image2",
+        "image3",
+
     ];
 }

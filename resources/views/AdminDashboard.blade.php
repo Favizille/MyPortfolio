@@ -234,7 +234,7 @@
                         <table class="table table-striped">
                           <thead>
                             <tr>
-                                {{-- <th> ID </th> --}}
+                                <th> Image </th>
                                 <th> Name </th>
                                 <th> Client </th>
                                 <th> Category </th>
@@ -246,7 +246,10 @@
                           <tbody>
                             @foreach ($projects as $project)
                               <tr>
-                                {{-- <td>{{$project->id}}</td> --}}
+                                <td>
+                                    {{-- @dd($project->id) --}}
+                                    <a href="{{route('portfolio.details', $project->id)}}"><img src="{{ asset('uploads/product/'. $project->image1)}}" alt=""></a>
+                                </td>
                                 <td>{{$project->name}}</td>
                                 <td>{{$project->client}}</td>
                                 <td>{{$project->category}}</td>
