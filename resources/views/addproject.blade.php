@@ -36,11 +36,25 @@
 				<img src="{{ asset("UPassets/images/pf.jpg")}}" alt="IMG">
 			</div>
 
-			<form action="{{route('project.create')}}" method="POST"  class="contact1-form validate-form">
+			<form action="{{route('project.create')}}" method="POST"  class="contact1-form validate-form" enctype="multipart/form-data">
                 @csrf
 				<span class="contact1-form-title">
 					Add Project
 				</span>
+
+                @if(session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                </div>
+                @endif
+
+                @if(count($errors) > 0)
+                    @foreach( $errors->all() as $message )
+                        <div class="alert alert-danger display-hide">
+                        <span>{{ $message }}</span>
+                        </div>
+                    @endforeach
+                @endif
 
 				<div class="wrap-input1 validate-input" data-validate = "Name is required">
 					<input class="input1" type="text" name="name" placeholder="Name Of Project">
@@ -68,7 +82,7 @@
 				</div>
 
                 <div class="wrap-input1 validate-input">
-                    <select class="form-select input1 p-3 rounded" aria-label="Default select example">
+                    <select name="category" class="form-select input1 p-3 rounded" aria-label="Default select example">
                         <option selected hidden>Category</option>
                         <option value="javascript">Javascript</option>
                         <option value="react">React</option>
@@ -76,9 +90,25 @@
                         <option value="laravel">Laravel</option>
                         <option value="wordpress">Wordpress</option>
                         <option value="api">API</option>
+                        <option value="api">others</option>
                     </select>
                     <span class="shadow-input1"></span>
                 </div>
+
+                <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="file" name="image1">
+					<span class="shadow-input1"></span>
+				</div>
+
+                <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="file" name="image2">
+					<span class="shadow-input1"></span>
+				</div>
+
+                <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="file" name="image3">
+					<span class="shadow-input1"></span>
+				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
 					<textarea class="input1" name="description" placeholder="Description of the project"></textarea>
@@ -86,7 +116,7 @@
 				</div>
 
 				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn">
+					<button type="submit" class="contact1-form-btn">
 						<span>
 							Add Project
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>

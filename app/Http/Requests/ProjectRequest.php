@@ -30,7 +30,10 @@ class ProjectRequest extends FormRequest
             "date" => "required",
             "github" => "required",
             "url" => "required",
-            "description" => "required"
+            "description" => "required",
+            "image1" => "required|mimes:png,jpg,jpeg",
+            "image2" => "required|mimes:png,jpg,jpeg",
+            "image3" => "required|mimes:png,jpg,jpeg",
         ];
     }
 }

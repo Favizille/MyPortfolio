@@ -22,6 +22,9 @@ return new class extends Migration
             $table->string("github");
             $table->string("url");
             $table->string("description");
+            $table->string('image1');
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
             $table->timestamps();
         });
     }
