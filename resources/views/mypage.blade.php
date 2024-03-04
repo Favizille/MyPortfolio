@@ -617,14 +617,12 @@
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-site">
+        {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-site">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/blog.jpg" class="img-fluid" alt="" style="height: 20em; width:25em;">
             <div class="portfolio-info">
               <h4>Blog Site</h4>
               <div class="portfolio-links">
-                {{-- https://github.com/Favizille/BlogSite --}}
-                {{-- <a href="assets/img/portfolio/blog.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog"><i class="bx bx-plus"></i></a> --}}
                 <a href="{{route("portfolio.details")}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -638,9 +636,7 @@
               <h4>LMS</h4>
               <p>Library Management System</p>
               <div class="portfolio-links">
-                {{-- https://github.com/Favizille/LibraryManagementSystem --}}
-                {{-- <a href="assets/img/portfolio/lms.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LMS"><i class="bx bx-plus"></i></a> --}}
-                <a href="{{route("portfolio.details")}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                 <a href="{{route("portfolio.details")}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -653,13 +649,26 @@
               <h4>E-commerce</h4>
               <p>App</p>
               <div class="portfolio-links">
-                {{-- https://github.com/Favizille/E-commerce --}}
-                {{-- <a href="assets/img/portfolio/ecommerce.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="e-commerce"><i class="bx bx-plus"></i></a> --}}
                 <a href="{{route("portfolio.details")}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
+
+        @foreach ($projects as $project)
+        <div class="col-lg-4 col-md-6 portfolio-item filter-site">
+            <div class="portfolio-wrap">
+              <img src="{{asset("uploads/product/".$project->image)}}" class="img-fluid" alt="" style="height: 20em; width:25em;">
+              <div class="portfolio-info">
+                <h4>{{$project->name}}</h4>
+                <p>{{$project->catgory}}</p>
+                <div class="portfolio-links">
+                    <a href="{{route("portfolio.details", $project->id)}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        @endforeach
 
       </div>
 

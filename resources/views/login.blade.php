@@ -20,7 +20,7 @@
                   <h2>LOGIN</h2>
                 </div>
 
-                <form action="{{ route('login')}}" class="pt-3" method="POST">
+                <form action="{{ route('loggingIn')}}" class="pt-3" method="POST">
                     @csrf
                         @if(count($errors) > 0)
                             @foreach( $errors->all() as $message )

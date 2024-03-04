@@ -15,7 +15,7 @@ class PortfolioController extends Controller
     }
 
     public function portfolio(){
-        return view("mypage");
+        return view("mypage", ['projects' => $this->project->all()]);
     }
 
     public function getPortfolioDetails($id){
