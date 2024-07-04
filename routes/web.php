@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PortfolioController;
+use App\Models\Service;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,10 +41,11 @@ Route::post('/login', [LoginController::class, 'loginAdmin'])->name('loggingIn')
 
 //Service Route
 Route::get('/service/add', [ServiceController::class, 'addService'])->name('addService');
+Route::get('/services', [ServiceController::class, 'getServices'])->name('services');
 
 
 
 // To do list
-// 2. Image CRUD for Project
+// 2. Image CRUD for Project DONE
 // 3. Service CRUD
 // 4. Notification CRUD
