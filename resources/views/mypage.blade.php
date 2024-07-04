@@ -608,9 +608,9 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-site">Site</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-site">Sites</li>
+            <li data-filter=".filter-card">APIs</li>
+            <li data-filter=".filter-web">Wordpress Sites</li>
           </ul>
         </div>
       </div>
@@ -690,7 +690,7 @@
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>Vison road, Uyo, Nigeria</p>
+            <p>Nwaniba, Uyo, Nigeria</p>
           </div>
         </div>
 

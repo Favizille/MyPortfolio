@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Project</title>
-        <link rel="stylesheet" href="{{asset("admin/assets/vendors/mdi/css/materialdesignicons.min.css")}}">
-        <link rel="stylesheet" href="{{ asset("admin/assets/vendors/flag-icon-css/css/flag-icon.min.css")}}">
-        <link rel="stylesheet" href="{{ asset("assets/vendors/css/vendor.bundle.base.css")}}">
-        <link rel="stylesheet" href="{{asset("admin/assets/vendors/font-awesome/css/font-awesome.min.css")}}" />
-        <link rel="stylesheet" href="{{ asset("admin/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css")}}">
-        <link rel="stylesheet" href="{{ asset("admin/assets/css/style.css")}}">
-    </head>
-  <body>
-    <div class="container-scroller">
-        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+@extends('Layouts.master')
+  @section('content')
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
               <a class="navbar-brand brand-logo" href="index.html"><h2 class="text-success">Admin Dashboard</h2></a>
               <a class="navbar-brand brand-logo-mini" href="index.html"><h3> Admin</h3></a>
@@ -165,7 +152,7 @@
                 <span class="mdi mdi-menu"></span>
               </button>
             </div>
-          </nav>
+      </nav>
       <div class="container-fluid page-body-wrapper">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
@@ -185,7 +172,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/forms/basic_elements.html">
+                <a class="nav-link" href="{{route('services')}}">
                   <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
                   <span class="menu-title">Services</span>
                 </a>
@@ -288,10 +275,4 @@
           </footer>
         </div>
       </div>
-    </div>
-    <script src="{{asset("admin/assets/vendors/js/vendor.bundle.base.js")}}"></script>
-    <script src="{{asset("admin/assets/js/off-canvas.js")}}"></script>
-    <script src="{{asset("admin/assets/js/hoverable-collapse.js")}}"></script>
-    <script src="{{asset("admin/assets/js/misc.js")}}"></script>>
-  </body>
-</html>
+  @endsection
