@@ -8,7 +8,7 @@
             <li class="nav-item ">
               <a class="nav-link" data-toggle="collapse" href="" >
                 <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
-                <span class="menu-title">Project</span>
+                <span class="menu-title">service</span>
               </a>
 
             </li>
@@ -58,7 +58,6 @@
                           <thead>
                             <tr>
                               <th> ID </th>
-                              <th> Image </th>
                               <th> Name </th>
                               <th> Description </th>
                                 <a href="{{route('addService')}}" class="btn btn-success mb-4">Add New</a>
@@ -66,8 +65,7 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @foreach ($services as $service)
-                            @if ($user->name === "Admin")
+                            {{-- @foreach ($services as $service)
                                 <tr hidden>
                                     <td class="py-1">
                                     {{$service->id}}
@@ -76,18 +74,27 @@
                                     <td> {{$service->email}} </td>
                                     <td> {{$service->created_at}} </td>
                                 </tr>
-                            @else
-                                <tr>
-                                    <td class="py-1">
-                                    {{$service->id}}
-                                    </td>
-                                    <td> {{$service->name}}</td>
-                                    <td> {{$service->email}} </td>
-                                    <td> {{$service->created_at}} </td>
-                                </tr>
-                            @endif
+                            @endforeach --}}
 
-                            @endforeach
+                            @foreach ($services as $service)
+                            <tr>
+                              <td>{{$service->id}}</td>
+                              <td>{{$service->name}}</td>
+                              <td>{{$service->description}}</td>
+                              <td class="row">
+                                  <form action="{{route("service.update", $service->id )}}" method="GET" class="col-3">
+                                      @csrf
+                                      <button type="submit" class="btn btn-success">edit</button>
+                                  </form>
+                                  <div class="col-1"></div>
+                                  <form action="{{ route('service.delete', $service->id)}}" method="POST" class="col-3">
+                                      @method('delete')
+                                      @csrf
+                                      <button type="submit" class="btn btn-danger">delete</button>
+                                  </form>
+                              </td>
+                            </tr>
+                          @endforeach
 
                           </tbody>
                         </table>

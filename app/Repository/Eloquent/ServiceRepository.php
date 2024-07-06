@@ -3,7 +3,7 @@ namespace App\Repository\Eloquent;
 
 use App\Models\Service;
 
-class ProjectRepository
+class ServiceRepository
 {
     protected $service;
 
@@ -12,6 +12,23 @@ class ProjectRepository
     }
 
     public function store($data){
-        
+        return $this->service->create($data);
+    }
+
+    public function getServices(){
+       return $this->service->all();
+    }
+
+    public function updateService(int $id, array $data){
+        return $this->service->where('id', $id)->update($data);
+    }
+
+    public function deleteService(int $id):bool
+    {
+        if(!$this->service->where('id', $id)->delete()){
+            return false;
+        };
+
+        return true;
     }
 }

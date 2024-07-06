@@ -42,8 +42,9 @@ Route::post('/login', [LoginController::class, 'loginAdmin'])->name('loggingIn')
 //Service Route
 Route::get('/service/add', [ServiceController::class, 'addService'])->name('addService');
 Route::get('/services', [ServiceController::class, 'getServices'])->name('services');
-
-
+Route::post('/service/store', [ServiceController::class, 'store'])->name("service.store");
+Route::put('/service/update/{serviceID}', [ServiceController::class, 'updateService'])->name('service.update');
+Route::delete('/service/delete/{serviceID}', [ServiceController::class, 'deleteService'])->name("service.delete");
 
 // To do list
 // 2. Image CRUD for Project DONE
