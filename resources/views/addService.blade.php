@@ -9,14 +9,15 @@
 </head>
 <body>
     <h2>Add Service</h2>
-    <form>
+    <form action="{{route('service.store')}}" method="POST">
+      @csrf
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Name</label>
-          <input type="name" class="form-control" >
+          <input type="name" class="form-control" name="name">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Description</label>
-          <textarea type="text" class="form-control"></textarea>
+          <textarea type="text" class="form-control" name="description"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
