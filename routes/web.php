@@ -43,6 +43,7 @@ Route::post('/login', [LoginController::class, 'loginAdmin'])->name('loggingIn')
 Route::get('/service/add', [ServiceController::class, 'addService'])->name('addService');
 Route::get('/services', [ServiceController::class, 'getServices'])->name('services');
 Route::post('/service/store', [ServiceController::class, 'store'])->name("service.store");
+Route::get('/service/edit/{serviceID}', [ServiceController::class, 'edit'])->name("service.edt");
 Route::put('/service/update/{serviceID}', [ServiceController::class, 'updateService'])->name('service.update');
 Route::delete('/service/delete/{serviceID}', [ServiceController::class, 'deleteService'])->name("service.delete");
 

@@ -34,6 +34,11 @@ class ServiceController extends Controller
         return $this->getServices();
     }
 
+    public function edit($serviceID){
+        $service = $this->serviceRepository->getService($serviceID);
+        return view("editservice", ["service" => $service]);
+    }
+
     public function updateService(Request $request, $serviceID){
         $updated = $this->serviceRepository->updateService($serviceID,$request->validated());
 
