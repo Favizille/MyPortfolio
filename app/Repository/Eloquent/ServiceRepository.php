@@ -23,6 +23,10 @@ class ServiceRepository
         return $this->service->where('id', $id)->update($data);
     }
 
+    public function getService(int $id){
+        return $this->service->find($id);
+    }
+
     public function deleteService(int $id):bool
     {
         if(!$this->service->where('id', $id)->delete()){

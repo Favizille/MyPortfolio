@@ -84,7 +84,7 @@
                               <td class="row">
                                   <form action="{{route("service.update", $service->id )}}" method="GET" class="col-3">
                                       @csrf
-                                      <button type="submit" class="btn btn-success">edit</button>
+                                      <button type="submit" class="btn btn-secondary">edit</button>
                                   </form>
                                   <div class="col-1"></div>
                                   <form action="{{ route('service.delete', $service->id)}}" method="POST" class="col-3">
