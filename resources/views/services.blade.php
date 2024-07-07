@@ -82,7 +82,7 @@
                               <td>{{$service->name}}</td>
                               <td>{{$service->description}}</td>
                               <td class="row">
-                                  <form action="{{route("service.update", $service->id )}}" method="GET" class="col-3">
+                                  <form action="{{route("service.edt", $service->id )}}" method="GET" class="col-3">
                                       @csrf
                                       <button type="submit" class="btn btn-secondary">edit</button>
                                   </form>

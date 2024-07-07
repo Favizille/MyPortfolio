@@ -215,7 +215,9 @@
                 </div>
               </div>
               <div class="col-lg-8">
-                <form action="{{route("service.update",$service->id )}}">
+                <form action="{{route("service.update",$service->id )}}" method="POST">
+                    @csrf
+                    @method("PUT")
                     <button class="btn btn-success">Update</button>
                 </form>
               </div>
